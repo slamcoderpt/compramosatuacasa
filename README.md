@@ -31,3 +31,6 @@ Sem endpoint, é apenas mostrada a mensagem de sucesso.
 As imagens em `assets/img/` (`hero.jpg`, `antes.jpg`, `depois.jpg`, `cta-lisboa.jpg`,
 `avatar-*.jpg`) são provisórias, recortadas do mockup em baixa resolução.
 Substituir pelos originais mantendo os mesmos nomes.
+
+`logo.png` e `logo-white.png` (versão para o rodapé escuro) foram gerados a partir
+do logo original.

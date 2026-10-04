@@ -125,6 +125,7 @@ h1, h2, h3 {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.2;
+  white-space: nowrap;
   cursor: pointer;
   transition: background-color .2s, transform .2s, box-shadow .2s;
 }
@@ -146,21 +147,12 @@ h1, h2, h3 {
 /* ---------- Logo ---------- */
 .logo {
   display: inline-flex;
-  align-items: baseline;
-  font-size: 1.75rem;
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  color: var(--navy);
-  line-height: 1;
-  white-space: nowrap;
+  flex-shrink: 0;
 }
-.logo__accent { color: var(--orange); }
-.logo__tld {
-  font-size: .6em;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.logo img {
+  width: auto;
+  height: 32px;
 }
-.logo--light { color: var(--white); }
 
 /* ---------- Cabeçalho ---------- */
 .header {
@@ -183,11 +175,11 @@ h1, h2, h3 {
 .nav {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 40px;
 }
 .nav__list {
   display: flex;
-  gap: 36px;
+  gap: 32px;
 }
 .nav__list a {
   font-size: .9375rem;
@@ -828,19 +820,21 @@ h1, h2, h3 {
   gap: 16px 32px;
   padding-block: 24px;
 }
-.footer .logo { font-size: 1.375rem; margin-right: auto; }
+.footer .logo { margin-right: auto; }
+.footer .logo img { height: 24px; }
 .footer__links,
 .footer__contacts {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 8px 28px;
+  gap: 8px 24px;
+  white-space: nowrap;
   font-size: .8125rem;
 }
 .footer__contacts {
   padding-left: 32px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  gap: 8px 40px;
+  gap: 8px 32px;
 }
 .footer a { transition: color .2s; }
 .footer a:hover { color: var(--white); }
@@ -855,12 +849,19 @@ h1, h2, h3 {
    Responsivo
    ========================================================================== */
 
+@media (max-width: 1240px) {
+  .header .logo img { height: 26px; }
+  .nav { gap: 24px; }
+  .nav__list { gap: 20px; }
+  .nav__list a { font-size: .875rem; }
+}
+
 @media (max-width: 1140px) {
-  .nav { gap: 28px; }
-  .nav__list { gap: 22px; }
   .situations { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .trust { grid-template-columns: 1fr; gap: 24px; }
-  .footer__inner { flex-wrap: wrap; }
+  .footer__inner,
+  .footer__links,
+  .footer__contacts { flex-wrap: wrap; }
   .footer__contacts { padding-left: 0; border-left: 0; }
 }
 
@@ -998,7 +999,7 @@ h1, h2, h3 {
 @media (max-width: 640px) {
   :root { --gutter: 16px; }
 
-  .logo { font-size: 1.375rem; }
+  .logo img { height: 22px; }
   .section { padding-block: 32px; }
   .section-head + * { margin-top: 22px; }
 
