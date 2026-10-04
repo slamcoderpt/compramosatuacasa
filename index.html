@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compramos a tua casa | Proposta rápida e sem compromisso</title>
+  <meta name="description" content="Queres vender a tua casa? Nós compramos. Recebe uma proposta pelo teu imóvel de forma simples, rápida e sem compromisso. Imóveis com ou sem obras, herdados ou vazios.">
+  <meta name="theme-color" content="#0e2340">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Ícones (baseados em Lucide, licença ISC) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><path d="M7 11V7a5 5 0 0 1 10 0v4"/><rect width="18" height="11" x="3" y="11" rx="2" fill="currentColor"/></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-notepad" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="8" width="4" height="13" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a href="#topo" class="logo" aria-label="compramosatuacasa.pt — início">
+        compramosatua<span class="logo__accent">casa</span><span class="logo__tld">.pt</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#imoveis">Que imóveis compramos</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#proposta" class="btn btn--primary btn--sm nav__cta" data-scroll-form>Receber proposta</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menu">
+        <svg class="icon icon--menu"><use href="#i-menu"/></svg>
+        <svg class="icon icon--close"><use href="#i-x"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Queres vender<br> a tua casa?<br> <span class="text-accent">Nós compramos.</span></h1>
+          <p class="hero__lead">Recebe uma proposta pelo teu imóvel de forma simples, rápida e sem compromisso.</p>
+          <a href="#proposta" class="btn btn--primary btn--lg hero__cta" data-scroll-form>
+            Quero receber uma proposta
+            <svg class="icon"><use href="#i-arrow-right"/></svg>
+          </a>
+          <ul class="checks">
+            <li><span class="checks__dot"><svg class="icon"><use href="#i-check"/></svg></span>Compra direta</li>
+            <li><span class="checks__dot"><svg class="icon"><use href="#i-check"/></svg></span>Imóveis com ou sem obras</li>
+            <li><span class="checks__dot"><svg class="icon"><use href="#i-check"/></svg></span>Processo acompanhado<br> até à escritura</li>
+          </ul>
+        </div>
+
+        <div class="lead-card" id="proposta">
+          <h2 class="lead-card__title">Recebe a tua proposta gratuitamente</h2>
+          <p class="lead-card__text">Preenche os dados do teu imóvel e entraremos em contacto em breve.</p>
+
+          <form class="lead-form" id="lead-form" novalidate data-endpoint="">
+            <label class="field field--stacked">
+              <svg class="icon field__icon"><use href="#i-map-pin"/></svg>
+              <span class="field__body">
+                <span class="field__label">Localização do imóvel</span>
+                <input type="text" name="localizacao" placeholder="(ex. Lisboa, Porto, Braga)" autocomplete="address-level2" required>
+              </span>
+            </label>
+
+            <label class="field field--select">
+              <svg class="icon field__icon"><use href="#i-house"/></svg>
+              <span class="sr-only">Tipo de imóvel</span>
+              <select name="tipo" required>
+                <option value="" selected disabled>Tipo de imóvel</option>
+                <option>Apartamento</option>
+                <option>Moradia</option>
+                <option>Prédio</option>
+                <option>Terreno</option>
+                <option>Loja / Espaço comercial</option>
+                <option>Outro</option>
+              </select>
+              <svg class="icon field__chevron"><use href="#i-chevron-down"/></svg>
+            </label>
+
+            <label class="field">
+              <svg class="icon field__icon"><use href="#i-user"/></svg>
+              <span class="sr-only">Nome</span>
+              <input type="text" name="nome" placeholder="Nome" autocomplete="name" required>
+            </label>
+
+            <label class="field">
+              <svg class="icon field__icon"><use href="#i-phone"/></svg>
+              <span class="sr-only">Telefone</span>
+              <input type="tel" name="telefone" placeholder="Telefone" autocomplete="tel" inputmode="tel" pattern="^\+?[0-9\s]{9,15}$" required>
+            </label>
+
+            <p class="lead-form__error" role="alert" hidden></p>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              Pedir proposta
+              <svg class="icon"><use href="#i-arrow-right"/></svg>
+            </button>
+
+            <p class="lead-form__privacy">
+              <svg class="icon"><use href="#i-lock"/></svg>
+              <span>Os seus dados estão seguros e serão usados apenas para contacto sobre o seu imóvel.</span>
+            </p>
+          </form>
+
+          <div class="lead-success" hidden tabindex="-1">
+            <span class="lead-success__icon"><svg class="icon"><use href="#i-check"/></svg></span>
+            <h3>Pedido recebido!</h3>
+            <p>Obrigado. Vamos analisar os dados do teu imóvel e entraremos em contacto em breve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="section section--light" id="como-funciona">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <h2>Como funciona</h2>
+          <p>Um processo simples, transparente e sem complicações.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <svg class="icon step__icon"><use href="#i-file-text"/></svg>
+            <div>
+              <h3>Fala-nos da tua casa</h3>
+              <p>Partilha os dados do imóvel em poucos minutos.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <svg class="icon step__icon"><use href="#i-search"/></svg>
+            <div>
+              <h3>Analisamos o imóvel</h3>
+              <p>Avaliamos localização, estado e potencial.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <svg class="icon step__icon"><use href="#i-notepad"/></svg>
+            <div>
+              <h3>Recebes uma proposta</h3>
+              <p>Sem compromisso e com total transparência.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <svg class="icon step__icon"><use href="#i-handshake"/></svg>
+            <div>
+              <h3>Avançamos para a compra</h3>
+              <p>Se aceitares, acompanhamos o processo até à escritura.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ QUE IMÓVEIS COMPRAMOS ============ -->
+    <section class="section section--beige" id="imoveis">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <h2>Compramos imóveis mesmo quando…</h2>
+        </header>
+
+        <ul class="situations">
+          <li class="situation">
+            <svg class="icon situation__icon"><use href="#i-wrench"/></svg>
+            <div>
+              <h3>Precisam de obras</h3>
+              <p>Mesmo em mau estado de conservação.</p>
+            </div>
+          </li>
+          <li class="situation">
+            <svg class="icon situation__icon"><use href="#i-users"/></svg>
+            <div>
+              <h3>Foram herdados</h3>
+              <p>Tratamos de todo o processo.</p>
+            </div>
+          </li>
+          <li class="situation">
+            <svg class="icon situation__icon"><use href="#i-house"/></svg>
+            <div>
+              <h3>Estão vazios</h3>
+              <p>Sem inquilinos e sem complicações.</p>
+            </div>
+          </li>
+          <li class="situation">
+            <svg class="icon situation__icon"><use href="#i-circle-x"/></svg>
+            <div>
+              <h3>Já tentaste vender sem sucesso</h3>
+              <p>Encontramos uma solução.</p>
+            </div>
+          </li>
+          <li class="situation">
+            <svg class="icon situation__icon"><use href="#i-zap"/></svg>
+            <div>
+              <h3>Queres vender rapidamente</h3>
+              <p>Resposta em poucos dias.</p>
+            </div>
+          </li>
+          <li class="situation">
+            <svg class="icon situation__icon"><use href="#i-chart"/></svg>
+            <div>
+              <h3>Têm potencial de valorização</h3>
+              <p>Vemos o valor onde outros não veem.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE NÓS ============ -->
+    <section class="section section--white" id="sobre">
+      <div class="container about">
+        <div class="about__content">
+          <h2 class="about__title">Compramos. Renovamos. <span class="text-accent">Valorizamos.</span></h2>
+          <p class="about__text">A <strong>compramosatuacasa.pt</strong> é uma empresa focada na aquisição e reabilitação de imóveis. Compramos diretamente a proprietários e damos uma nova vida a casas com potencial.</p>
+          <ul class="about__values">
+            <li><svg class="icon"><use href="#i-leaf"/></svg><span>Mais vida<br> para os bairros</span></li>
+            <li><svg class="icon"><use href="#i-house"/></svg><span>Reabilitação<br> com propósito</span></li>
+            <li><svg class="icon"><use href="#i-users"/></svg><span>Valorização<br> de imóveis e comunidades</span></li>
+          </ul>
+          <a href="#faq" class="btn btn--primary about__cta">
+            Saber mais sobre nós
+            <svg class="icon"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+
+        <div class="about__gallery">
+          <figure class="photo">
+            <img src="assets/img/antes.jpg" alt="Interior de um imóvel degradado antes da reabilitação" loading="lazy" width="600" height="660">
+            <figcaption class="photo__tag photo__tag--dark">Antes</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="assets/img/depois.jpg" alt="Sala renovada e mobilada depois da reabilitação" loading="lazy" width="600" height="660">
+            <figcaption class="photo__tag">Depois</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONFIANÇA ============ -->
+    <section class="section section--light">
+      <div class="container trust">
+        <div class="trust__main">
+          <header class="section-head">
+            <h2>Porque confiam em nós</h2>
+            <p>Mais do que comprar imóveis, construímos relações de confiança.</p>
+          </header>
+          <ul class="features">
+            <li class="feature">
+              <svg class="icon feature__icon"><use href="#i-zap"/></svg>
+              <div>
+                <h3>Resposta rápida</h3>
+                <p>Recebes uma proposta em poucos dias.</p>
+              </div>
+            </li>
+            <li class="feature">
+              <svg class="icon feature__icon"><use href="#i-file-text"/></svg>
+              <div>
+                <h3>Processo simples</h3>
+                <p>Sem burocracias desnecessárias.</p>
+              </div>
+            </li>
+            <li class="feature">
+              <svg class="icon feature__icon"><use href="#i-users"/></svg>
+              <div>
+                <h3>Acompanhamento profissional</h3>
+                <p>Da proposta à escritura, sempre ao teu lado.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>“Tínhamos uma casa herdada e precisávamos de resolver o processo rapidamente. Foi simples e transparente.”</blockquote>
+            <figcaption class="testimonial__author">
+              <img src="assets/img/avatar-ana-miguel.jpg" alt="" width="56" height="56" loading="lazy">
+              <span><strong>Ana &amp; Miguel</strong>Porto</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>“Recebemos uma proposta sem compromisso e avançámos sem complicações.”</blockquote>
+            <figcaption class="testimonial__author">
+              <img src="assets/img/avatar-carla.jpg" alt="" width="56" height="56" loading="lazy">
+              <span><strong>Carla S.</strong>Braga</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--white" id="faq">
+      <div class="container faq">
+        <header class="section-head">
+          <h2>Perguntas frequentes</h2>
+          <p>Tiramos as tuas dúvidas.</p>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Compram casas com obras?<svg class="icon"><use href="#i-chevron-down"/></svg></summary>
+            <p>Sim. Compramos imóveis em qualquer estado de conservação, incluindo casas que precisam de obras profundas. Não tens de fazer nada antes de vender — a nossa proposta já tem em conta a reabilitação.</p>
+          </details>
+          <details class="faq__item">
+            <summary>A proposta é sem compromisso?<svg class="icon"><use href="#i-chevron-down"/></svg></summary>
+            <p>Sim. A proposta é gratuita e não te obriga a nada. Analisas com calma e só avançamos se aceitares.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quanto tempo demora o processo?<svg class="icon"><use href="#i-chevron-down"/></svg></summary>
+            <p>Depois de recebermos os dados do imóvel, apresentamos uma proposta em poucos dias. Se aceitares, a escritura é marcada de acordo com a tua disponibilidade e com a documentação do imóvel.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Compram imóveis herdados?<svg class="icon"><use href="#i-chevron-down"/></svg></summary>
+            <p>Sim. Compramos imóveis herdados, incluindo situações com vários herdeiros, e acompanhamos-te em toda a documentação necessária até à escritura.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Em que zonas atuam?<svg class="icon"><use href="#i-chevron-down"/></svg></summary>
+            <p>Atuamos em várias zonas do país, com especial foco em Lisboa, Porto e Braga. Envia-nos os dados do teu imóvel e dizemos-te rapidamente se conseguimos avançar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <div class="cta__content">
+          <h2>Quer saber quanto podemos oferecer pela sua casa?</h2>
+          <p>Envie os dados do imóvel e receba uma proposta sem compromisso.</p>
+        </div>
+        <a href="#proposta" class="btn btn--primary cta__btn" data-scroll-form>
+          Receber proposta
+          <svg class="icon"><use href="#i-arrow-right"/></svg>
+        </a>
+        <ul class="cta__badges">
+          <li><svg class="icon"><use href="#i-tag"/></svg>Sem compromisso</li>
+          <li><svg class="icon"><use href="#i-shield-check"/></svg>Processo seguro</li>
+          <li><svg class="icon"><use href="#i-clock"/></svg>Resposta rápida</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__inner">
+      <a href="#topo" class="logo logo--light" aria-label="compramosatuacasa.pt — voltar ao topo">
+        compramosatua<span class="logo__accent">casa</span><span class="logo__tld">.pt</span>
+      </a>
+      <ul class="footer__links">
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos e Condições</a></li>
+        <li><a href="mailto:geral@compramosatuacasa.pt">Contacto</a></li>
+      </ul>
+      <ul class="footer__contacts">
+        <li><a href="mailto:geral@compramosatuacasa.pt"><svg class="icon"><use href="#i-mail"/></svg>geral@compramosatuacasa.pt</a></li>
+        <li><a href="tel:+351000000000"><svg class="icon"><use href="#i-phone"/></svg>+351 000 000 000</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
