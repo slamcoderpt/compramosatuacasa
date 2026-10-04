@@ -219,7 +219,7 @@ h1, h2, h3 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40%;
+  left: 0;
   right: 0;
   background: url("../img/hero.jpg") center / cover no-repeat;
 }
@@ -227,7 +227,7 @@ h1, h2, h3 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, var(--bg-cream) 0%, rgba(251, 248, 244, 0.85) 18%, rgba(251, 248, 244, 0) 50%);
+  background: linear-gradient(90deg, var(--bg-cream) 0%, var(--bg-cream) 30%, rgba(251, 248, 244, 0.75) 42%, rgba(251, 248, 244, 0) 62%);
 }
 
 .hero__inner {
@@ -909,6 +909,8 @@ h1, h2, h3 {
     left: 46%;
     bottom: auto;
     height: 560px;
+    background-image: url("../img/hero-mobile.jpg");
+    background-position: 56% center;
   }
   .hero__media::before {
     background:
