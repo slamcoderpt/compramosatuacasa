@@ -28,7 +28,7 @@ Sem endpoint, é apenas mostrada a mensagem de sucesso.
 
 ## Imagens
 
-As imagens em `assets/img/` (`antes.jpg`, `depois.jpg`, `cta-lisboa.jpg`,
+As imagens em `assets/img/` (`cta-lisboa.jpg`,
 `avatar-*.jpg`) são provisórias, recortadas do mockup em baixa resolução.
 Substituir pelos originais mantendo os mesmos nomes.
 
