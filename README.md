@@ -50,12 +50,12 @@ Site estático, sem build.
 
 ## Domínio
 
-1. No projeto na Vercel: **Settings → Domains**, adicionar `compramosatuacasa.pt`
-   e `www.compramosatuacasa.pt` (configurar o `www` para redirecionar para o domínio sem `www`).
+1. No projeto na Vercel: **Settings → Domains**, adicionar `www.compramosatuacasa.pt`
+   (domínio principal) e `compramosatuacasa.pt` (a redirecionar para o `www`).
 2. No registo de DNS do domínio, criar os registos que a Vercel indicar. Normalmente:
    - `A` em `@` → `76.76.21.21`
    - `CNAME` em `www` → `cname.vercel-dns.com`
 3. O certificado HTTPS é emitido automaticamente depois de o DNS propagar.
 
-O domínio canónico (`https://compramosatuacasa.pt/`) está definido em `index.html`
+O domínio canónico (`https://www.compramosatuacasa.pt/`) está definido em `index.html`
 (`canonical` e Open Graph), `robots.txt` e `sitemap.xml`. Se mudar, atualizar nesses ficheiros.
