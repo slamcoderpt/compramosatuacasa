@@ -38,47 +38,6 @@
     });
   });
 
-  /* ---------- Comparador antes/depois ---------- */
-  document.querySelectorAll(".compare").forEach(function (compare) {
-    var range = compare.querySelector(".compare__range");
-    var dragging = false;
-
-    function setPos(value) {
-      var pos = Math.min(100, Math.max(0, value));
-      compare.style.setProperty("--pos", pos + "%");
-      compare.classList.toggle("hide-before", pos < 24);
-      compare.classList.toggle("hide-after", pos > 76);
-      range.value = Math.round(pos);
-      range.setAttribute("aria-valuetext", Math.round(pos) + "% antes, " + (100 - Math.round(pos)) + "% depois");
-    }
-
-    function posFromEvent(e) {
-      var rect = compare.getBoundingClientRect();
-      return ((e.clientX - rect.left) / rect.width) * 100;
-    }
-
-    compare.addEventListener("pointerdown", function (e) {
-      if (e.button !== 0) return;
-      dragging = true;
-      compare.classList.add("is-dragging");
-      compare.setPointerCapture(e.pointerId);
-      setPos(posFromEvent(e));
-    });
-    compare.addEventListener("pointermove", function (e) {
-      if (dragging) setPos(posFromEvent(e));
-    });
-    ["pointerup", "pointercancel", "lostpointercapture"].forEach(function (type) {
-      compare.addEventListener(type, function () {
-        dragging = false;
-        compare.classList.remove("is-dragging");
-      });
-    });
-
-    range.addEventListener("input", function () {
-      setPos(Number(range.value));
-    });
-  });
-
   /* ---------- Formulário de proposta ---------- */
   var errorBox = form.querySelector(".lead-form__error");
   var success = document.querySelector(".lead-success");
