@@ -415,6 +415,8 @@ h1, h2, h3 {
   stroke-width: 2.4;
 }
 
+.lead-form__privacy a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
 .lead-success {
   margin-top: 20px;
   padding: 24px 8px 8px;
@@ -896,6 +898,36 @@ h1, h2, h3 {
 }
 .footer__contacts .icon { width: 22px; height: 22px; stroke-width: 1.6; }
 
+/* ---------- Páginas legais ---------- */
+.legal {
+  padding-block: 56px 72px;
+  background: var(--white);
+}
+.legal__inner { max-width: 760px; }
+.legal h1 { font-size: clamp(2rem, 4vw, 2.75rem); }
+.legal__updated {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: .9375rem;
+}
+.legal h2 {
+  margin-top: 40px;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+.legal p,
+.legal ul {
+  margin-top: 14px;
+  color: #3b4657;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.legal ul { padding-left: 22px; list-style: disc; }
+.legal li + li { margin-top: 6px; }
+.legal strong { color: var(--navy); }
+.legal a { color: var(--orange-dark); text-decoration: underline; text-underline-offset: 2px; }
+.legal [data-todo] { background: #fff3c4; padding: 0 4px; border-radius: 3px; }
+
 /* ==========================================================================
    Responsivo
    ========================================================================== */
@@ -1050,6 +1082,9 @@ h1, h2, h3 {
 
 @media (max-width: 640px) {
   :root { --gutter: 16px; }
+
+  .header__cta { display: none; }
+  .legal { padding-block: 36px 56px; }
 
   .cta {
     background:
