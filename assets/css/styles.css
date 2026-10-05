@@ -515,6 +515,71 @@ h1, h2, h3 {
   line-height: 1.45;
 }
 
+/* ---------- Comparação ---------- */
+.versus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  max-width: 880px;
+  margin-inline: auto;
+}
+.versus__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: .9375rem;
+}
+.versus__table th,
+.versus__table td {
+  padding: 15px 20px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border);
+}
+.versus__table thead th {
+  padding-block: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  border-bottom: 0;
+}
+.versus__table thead td { border-bottom: 0; }
+.versus__table tbody th {
+  width: 30%;
+  font-weight: 600;
+  color: var(--navy);
+}
+.versus__table td { color: var(--muted); }
+.versus__table td .icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: -4px;
+  color: #b4bbc5;
+  stroke-width: 2.5;
+}
+
+.versus__table .versus__us {
+  background: #fff6f1;
+  color: var(--navy);
+  font-weight: 600;
+  border-left: 2px solid var(--orange);
+  border-right: 2px solid var(--orange);
+}
+.versus__table td.versus__us .icon { color: var(--orange); stroke-width: 3; }
+.versus__table thead .versus__us {
+  background: var(--orange);
+  color: var(--white);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.versus__table tbody tr:last-child th,
+.versus__table tbody tr:last-child td { border-bottom: 0; }
+.versus__table tbody tr:last-child .versus__us {
+  border-bottom: 2px solid var(--orange);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
 /* ---------- Situações ---------- */
 .situations {
   display: grid;
@@ -1078,6 +1143,14 @@ h1, h2, h3 {
 
   .lead-card { padding: 20px 16px; }
   .lead-card__title { font-size: 1.1875rem; }
+
+  .versus__table { font-size: .8125rem; }
+  .versus__table th,
+  .versus__table td { padding: 12px 10px; }
+  .versus__table thead th { font-size: .875rem; }
+  .versus__table tbody th { width: 28%; }
+  .versus__table td .icon { display: none; }
+  .versus__cta { width: 100%; }
 
   .situation { gap: 12px; padding: 14px 12px; }
   .situation__icon { width: 32px; height: 32px; }
