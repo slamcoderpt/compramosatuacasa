@@ -28,11 +28,10 @@ Sem endpoint, é apenas mostrada a mensagem de sucesso.
 
 ## Imagens
 
-As imagens em `assets/img/` (`cta-lisboa.jpg`,
-`avatar-*.jpg`) são provisórias, recortadas do mockup em baixa resolução.
+As fotos dos testemunhos (`avatar-*.jpg`) são provisórias, recortadas do mockup em baixa resolução.
 Substituir pelos originais mantendo os mesmos nomes.
 
-`hero.jpg` (desktop) e `hero-mobile.jpg` (1100px, para ecrãs ≤960px) são a imagem final do hero.
+`hero.jpg` (desktop) e `hero-mobile.jpg` (1100px, para ecrãs ≤960px) são a imagem final do hero; `cta-lisboa.jpg` e `cta-lisboa-mobile.jpg` (≤640px) a da faixa final.
 
 `logo.png` e `logo-white.png` (versão para o rodapé escuro) foram gerados a partir
 do logo original.
