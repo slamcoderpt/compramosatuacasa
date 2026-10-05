@@ -6,6 +6,10 @@ Landing page estática (HTML + CSS + JS, sem dependências nem build).
 
 ```
 index.html            Página
+404.html              Página de erro (servida pela Vercel em URLs inexistentes)
+vercel.json           Configuração da Vercel (URLs limpos, headers de segurança e cache)
+robots.txt            Indicações para motores de busca
+sitemap.xml           Sitemap
 assets/css/styles.css Estilos (desktop-first; breakpoints em 1140, 1080, 960, 640 e 420px)
 assets/js/main.js     Menu móvel e formulário de proposta
 assets/img/           Imagens
@@ -35,3 +39,23 @@ Substituir pelos originais mantendo os mesmos nomes.
 
 `logo.png` e `logo-white.png` (versão para o rodapé escuro) foram gerados a partir
 do logo original.
+
+## Deploy na Vercel
+
+Site estático, sem build.
+
+1. Em vercel.com: **Add New → Project → Import** do repositório GitHub.
+2. **Framework Preset:** `Other`. Deixar *Build Command* e *Output Directory* vazios.
+3. **Deploy.** Cada push para o branch de produção faz um novo deploy.
+
+## Domínio
+
+1. No projeto na Vercel: **Settings → Domains**, adicionar `compramosatuacasa.pt`
+   e `www.compramosatuacasa.pt` (configurar o `www` para redirecionar para o domínio sem `www`).
+2. No registo de DNS do domínio, criar os registos que a Vercel indicar. Normalmente:
+   - `A` em `@` → `76.76.21.21`
+   - `CNAME` em `www` → `cname.vercel-dns.com`
+3. O certificado HTTPS é emitido automaticamente depois de o DNS propagar.
+
+O domínio canónico (`https://compramosatuacasa.pt/`) está definido em `index.html`
+(`canonical` e Open Graph), `robots.txt` e `sitemap.xml`. Se mudar, atualizar nesses ficheiros.
