@@ -53,7 +53,7 @@
   function validate() {
     var firstInvalid = null;
     Array.prototype.forEach.call(form.elements, function (el) {
-      if (!el.name) return;
+      if (!el.name || !el.closest(".field")) return;
       if (el.type !== "select-one") el.value = el.value.trim();
       var valid = el.checkValidity();
       el.closest(".field").classList.toggle("is-invalid", !valid);
@@ -72,6 +72,20 @@
     }
   });
 
+  // De onde veio o visitante: parâmetros UTM da campanha, ou o site que o trouxe.
+  function leadSource() {
+    var params = new URLSearchParams(window.location.search);
+    var utm = ["utm_source", "utm_medium", "utm_campaign"]
+      .map(function (k) { return params.get(k); })
+      .filter(Boolean);
+    if (utm.length) return utm.join(" / ");
+    try {
+      var ref = document.referrer && new URL(document.referrer).hostname;
+      if (ref && ref !== window.location.hostname) return ref;
+    } catch (err) { /* referrer inválido */ }
+    return "Direto";
+  }
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -86,6 +100,7 @@
 
     var data = {};
     new FormData(form).forEach(function (value, key) { data[key] = value; });
+    data.origem = leadSource();
 
     // Definir data-endpoint no <form> para enviar os pedidos para um backend.
     var endpoint = form.getAttribute("data-endpoint");

@@ -103,7 +103,10 @@
           <h2 class="lead-card__title">Recebe a tua proposta gratuitamente</h2>
           <p class="lead-card__text">Preenche os dados do teu imóvel e entraremos em contacto em breve.</p>
 
-          <form class="lead-form" id="lead-form" novalidate data-endpoint="">
+          <form class="lead-form" id="lead-form" novalidate data-endpoint="/api/lead">
+            <div class="lead-form__trap" aria-hidden="true">
+              <label>Empresa <input type="text" name="empresa" tabindex="-1" autocomplete="off"></label>
+            </div>
             <label class="field field--stacked">
               <svg class="icon field__icon"><use href="#i-map-pin"/></svg>
               <span class="field__body">

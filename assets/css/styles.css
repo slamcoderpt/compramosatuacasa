@@ -386,6 +386,14 @@ h1, h2, h3 {
 
 .lead-form .btn { margin-top: 6px; min-height: 52px; font-size: 1.0625rem; }
 
+.lead-form__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .lead-form__error {
   font-size: .875rem;
   color: #c5221f;

@@ -6,6 +6,7 @@ Landing page estática (HTML + CSS + JS, sem dependências nem build).
 
 ```
 index.html            Página
+api/lead.js           Função que grava os pedidos do formulário no Notion
 404.html              Página de erro (servida pela Vercel em URLs inexistentes)
 vercel.json           Configuração da Vercel (URLs limpos, headers de segurança e cache)
 robots.txt            Indicações para motores de busca
@@ -23,12 +24,26 @@ Abrir `index.html` no browser, ou servir a pasta:
 npx serve .
 ```
 
-## Formulário
+## Formulário → Notion
 
-O formulário valida os campos no browser. Para enviar os pedidos para um backend,
-preencher o atributo `data-endpoint` do `<form id="lead-form">` com o URL — os dados
-são enviados por `POST` em JSON (`localizacao`, `tipo`, `nome`, `telefone`).
-Sem endpoint, é apenas mostrada a mensagem de sucesso.
+O formulário envia os pedidos para `api/lead.js` (função da Vercel), que cria uma linha
+na base de dados **"Leads — compramosatuacasa.pt"** do Notion com nome, telefone,
+localização, tipo de imóvel, estado (`Novo`) e origem da visita (parâmetros UTM ou site de origem).
+
+Variáveis de ambiente na Vercel (**Settings → Environment Variables**):
+
+- `NOTION_DATABASE_ID` — ID da base de dados de leads.
+- `NOTION_TOKEN` — token da integração interna do Notion (marcar como *Sensitive*).
+
+Configurar a integração:
+
+1. Em https://www.notion.so/profile/integrations, criar uma integração **interna** no workspace
+   e copiar o *Internal Integration Secret*.
+2. Na base de dados de leads: **⋯ → Connections → adicionar** a integração.
+3. Pôr o secret em `NOTION_TOKEN` na Vercel e fazer *Redeploy*.
+
+O formulário tem um campo escondido (`empresa`) contra bots: pedidos com esse campo preenchido
+são ignorados.
 
 ## Imagens
 
